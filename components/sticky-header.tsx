@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X, Zap } from "lucide-react"
+import Image from "next/image"
+import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -36,18 +37,15 @@ export function StickyHeader() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-        <a href="#anasayfa" className="flex items-center gap-2">
-          <div className="flex size-9 items-center justify-center rounded-lg bg-accent">
-            <Zap className="size-5 text-accent-foreground" />
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className="text-lg font-bold tracking-tight text-foreground">
-              {"Somek"}
-            </span>
-            <span className="-mt-1 text-xs font-medium tracking-widest text-accent">
-              {"ENERJİ"}
-            </span>
-          </div>
+        <a href="#anasayfa" className="flex items-center">
+          <Image
+            src="/images/logo.jpg"
+            alt="Somek Enerji logosu"
+            width={180}
+            height={56}
+            className="h-11 w-auto rounded-md object-contain"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}

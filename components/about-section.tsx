@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useRef, useState, useEffect } from "react"
 import Image from "next/image"
@@ -67,9 +67,21 @@ export function AboutSection() {
 
           {/* Text */}
           <div className="flex-1 text-center lg:text-left">
-            <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-              {"Somek Enerji'nin ustasıyım. İzmir ve çevresinde konut ve küçük işletmelere elektrik arıza, tesisat ve pano işleri konusunda hizmet veriyorum. Her işi güvenli, temiz ve düzenli şekilde teslim etmeye özen gösteririm."}
-            </p>
+            <div className="space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+              <p>
+                {
+                  "Ben Ekrem Sömek, Somek Enerjinin kurucusu ve ustasıyım. Eskişehir Teknik Üniversitesinde aldığım eğitim sonrası elektrik sektöründe aktif olarak çalıştım ve bir dönem Gediz Elektrik bünyesinde görev aldım."
+                }
+              </p>
+              <p>
+                {
+                  "İzmir ve çevresinde konut ve küçük işletmelere elektrik arıza tespiti, tesisat yenileme, pano düzenleme ve aydınlatma çözümleri sunuyorum. Her işi bizzat kendim yapar, güvenlik ve temiz işçiliği ön planda tutarım."
+                }
+              </p>
+              <p>
+                {"Net fiyatlandırma, zamanında müdahale ve müşteri memnuniyeti benim için en önemli kriterdir"}
+              </p>
+            </div>
             <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
               {highlights.map((h) => (
                 <div

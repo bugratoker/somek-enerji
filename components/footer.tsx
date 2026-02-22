@@ -1,4 +1,5 @@
-import { Zap, Phone, Mail, MapPin } from "lucide-react"
+import Image from "next/image"
+import { Phone, Mail, MapPin } from "lucide-react"
 
 const quickLinks = [
   { href: "#anasayfa", label: "Ana Sayfa" },
@@ -16,16 +17,14 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
         {/* Brand */}
         <div>
-          <a href="#anasayfa" className="mb-4 flex items-center gap-2">
-            <div className="flex size-8 items-center justify-center rounded-lg bg-accent">
-              <Zap className="size-4 text-accent-foreground" />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-base font-bold text-foreground">{"Somek"}</span>
-              <span className="-mt-0.5 text-[10px] font-medium tracking-widest text-accent">
-                {"ENERJİ"}
-              </span>
-            </div>
+          <a href="#anasayfa" className="mb-4 inline-flex items-center">
+            <Image
+              src="/images/logo.jpg"
+              alt="Somek Enerji logosu"
+              width={170}
+              height={54}
+              className="h-10 w-auto rounded-md object-contain"
+            />
           </a>
           <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
             {"İzmir ve çevresinde konut ve küçük işletmelere güvenilir, temiz ve zamanında elektrik hizmeti sunuyoruz."}
