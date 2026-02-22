@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Somek Enerji | İzmir Elektrikçi Hizmetleri',
+  title: 'Somek Elektrik | İzmir Elektrikçi Hizmetleri',
   description:
     "İzmir'de elektrik arıza, pano, tesisat ve aydınlatma hizmetleri. Hızlı dönüş, temiz işçilik ve şeffaf fiyatlandırma.",
   generator: 'v0.app',
